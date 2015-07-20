@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imagenes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head> 
+<body>
+<div class="content-fluid">
+<h1>Imagenes</h1>
+<div class="row">
+	<div class="col-md-4">
+		<h4 class="text-success">Rounded corner <code>.img-rounded</code> </h4>
+		<img src="img/tiger.jpg" class="img-rounded" width="304" height="236">
+	</div>
+	<div class="col-md-4">
+		<h4 class="text-warning">Circle <code>.img-circle</code> </h4>
+		<img src="img/tiger.jpg" class="img-circle" width="304" height="236">
+	</div>
+	<div class="col-md-4">
+		<h4 class="text-info">Thumbnail <code>.img-thumbnail</code> </h4>
+		<img src="img/tiger.jpg" class="img-thumbnail" width="304" height="360">
+	</div>
+</div>
+<hr>
+<h1>Responsive image <kbd>.img-responsive</kbd> </h1>
+<p>The <code>.img-responsive</code>  class applies max-width: 100%; and height: auto; to the image</p>
+<p class="lead">En esta imagen combine las clases <code>img-responsive img-thumbnail img-circle</code> </p>
+<img src="img/tiger.jpg" class="img-responsive img-thumbnail img-circle">
+</div>
+<hr>
+<h1 class="text-info">Image gallery</h1>
+<pre>This element is created with <code>.thumbnail</code> class over a tag </pre>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-3"></div>
+		<div class="col-xs-3">
+			<a href="img/tiger.jpg" class="thumbnail">
+				<p class="bg-sucess">Description Image 1</p>
+				<img src="img/tiger.jpg">
+			</a>
+		</div>
+		<div class="col-xs-3">
+			<a href="img/tiger.jpg" class="thumbnail">
+				<p class="bg-sucess">Description Image 1</p>
+				<img src="img/tiger.jpg">
+			</a>
+		</div>
+		<div class="col-xs-3"></div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4"></div>
+		<div class="col-xs-4">
+			<a href="img/tiger.jpg" class="thumbnail">
+				<p>Image description</p>
+				<img src="img/tiger.jpg">
+			</a>
+		</div>
+		<div class="col-xs-4"></div>
+	</div>
+</div>
+<hr>
+<div class="container">
+	<h1>Responsive Embeds</h1>
+	<h3>Classes can be applied directly to <small> iframe, embed, video, and  object</small>  elements</h3>
+	<code>.embed-responsive</code>
+	<p> The first iframe is using<code>.embed-responsive-16by9</code></p>
+	 <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/TOzi0-CqjYc"></iframe>
+      </div>
+      <p> The second iframe is using<code>.embed-responsive-4by3</code></p>
+      <div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/TOzi0-CqjYc"></iframe>
+      </div>
+</body>
+</html>
