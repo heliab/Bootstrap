@@ -1,0 +1,49 @@
+<!DOCTYPE  html>
+<html>
+<head>
+	<title>Alerts</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="jumbotron">
+		<h2>Alerts on bootstrap <small><code>.alert</code> </small> </h2>
+		<p>There are four color types on alerts on bootstrap <code>.alert-success .alert-info .alert-warning .alert-danger</code>. Also adding <code>.alert</code> class.</p>
+	</div>
+
+	<div class="alert alert-success">Simple success alert</div>
+	<div class="alert alert-warning">Simple warning alert</div>
+	<div class="alert alert-danger">Simple danger alert</div>
+	<div class="alert alert-info">Simple info alert</div>
+
+	<div class="page-hrader"><h2>Closing alerts</h2></div>
+	<p>To close the alert message, add <code> class="close"</code> and <code>data-dismiss="alert"</code> to a link or a button element:</p>
+
+	<div class="alert alert-success">
+		<a href="#" class="close" data-dismiss="alert">X</a>
+		<p><strong>Sucess!</strong> You suceed!</p>
+	</div>
+	<div class="well well-sm"> <p>To get the closing X you need to put &times or any character inside the link a tag.</p></div>
+
+	<div class="alert alert-warning">
+		<a href="#" class="close" data-dismiss="alert">&times</a>
+		<p><strong>Warining!</strong> You are on danger!</p>
+	</div>
+
+	<div class="alert alert-info">
+		<a href="#" class="close" data-dismiss="alert">Close</a>
+		<p><strong>Information!</strong> You are informed!</p>
+	</div>
+
+	<div class="alert alert-danger">
+		<a href="#" class="close" data-dismiss="alert">-</a>
+		<p><strong>Danger!</strong> Be careful!,</p>
+	</div>
+</div>
+	<a href="index.html">Ir a inicio</a>
+</body>
+</html>
