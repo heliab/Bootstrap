@@ -53,6 +53,79 @@
 	</div>
 <hr>
 <h2 class="text-success">Justified Buttons</h2>
+<pre>There are 2 ways to create justified buttons depending on what control you use to create it.
+If you are using <code>< a ></code> element. You use <code>.btn-group-justified</code> class over a div element to wrap all the elements. Eg.</pre>
+<div class="btn-group-justified btn-group-sm">
+	<a href="#" class="btn btn-primary">Haniel</a>
+	<a href="#" class="btn btn-warning">Eliab</a>
+	<a href="#" class="btn btn-danger">Lopez</a>
+	<a href="#" class="btn btn-info">Mendieta</a>
+	<a href="#" class="btn btn-success">y Familia</a>
 </div>
+<pre>But if you use <code>button</code> element. You must nest 2 divs before creating the buttons. 
+In the first div you must use the classes <code>.btn-group-justified .btn-group</code>. All the buttons must be nested separately into other div with the class <code>.btn-group</code> </pre>
+<div class="btn-group btn-group-justified">
+	<div class="btn-group btn-group-lg">
+		<button class="btn btn-default">Button 1</button>
+	</div>
+		<div class="btn-group btn-group-lg">
+			<button class="btn btn-info">Button 2</button>
+		</div>
+		<div class="btn-group btn-group-lg">
+			<button class="btn btn-primary">Button 3</button>
+		</div>
+		<div class="btn-group btn-group-lg">
+			<button class="btn btn-success">Button 4</button>
+		</div>
+		<div class="btn-group btn-group-lg">
+			<button class="btn btn-danger">Button 5</button>
+		</div>
+</div>
+	<div class="alert alert-info"> The same way for input elements. nesting divs.
+		<a href="#" class="close" data-dismiss="alert">Close</a>
+	</div>
+	<div class="alert alert-warning"> For applying btn-group size you must add it to the nested grid.
+		<a href="#" class="close" data-dismiss="alert">Close</a>
+	</div>
+
+	<div class="page-header">
+		<h1 class="text-info bg-success">Nesting Button Groups & Dropdown Menus</h1>
+		<small>Use <code>class="dropdown-toggle" data-toggle="dropdown</code>over the button and<code>span class="caret"</code> inside the button. Close the Span and the button </small>. Then open a list with <code>class="dropdown-menu" role="menu" </code>on ul.
+	</div>
+	<div class="btn-group btn-group-justified">
+		<div class="btn-group">
+			<button class="btn btn-default">Button 1</button>
+		</div>
+		<div class="btn-group">
+			<button class="btn btn-default">Button 2</button>
+		</div>
+		<div class="btn-group">
+			<button class="btn btn-default dropdown-toggle active" data-toggle="dropdown">Button 3 <span class="caret"></span></button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Hello</a></li>
+				<li><button class="btn btn-primary">Hola</button></li>
+			</ul>
+		</div>
+	</div>
+	<br>
+		<hr>
+	<div class="page-header">
+		<h1>Split dropdown buttons</h1>
+	</div>
+	<div class="btn-group">
+		<a href="#" class="btn btn-primary">Menu</a>
+		<a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span></a>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="#">Hola</a> </li>
+			<li><a href="#">Hola</a> </li>
+			<li><a href="#">Hola</a> </li>
+		</ul>
+	</div>
+	<br>
+
+<br>
+
+</div>
+<a href="index.html">Inicio</a>
 </body>
 </html>
